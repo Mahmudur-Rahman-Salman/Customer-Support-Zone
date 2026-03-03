@@ -1,0 +1,33 @@
+.banner-card {
+  position: relative;
+  height: 160px;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:
+    left center,
+    right center,
+    center;
+  background-size: 200px, 200px, cover;
+}
+
+/* In Progress */
+.banner-progress {
+  background-image:
+    url("./assets//image/vector1.png"), url("./assets/image/vector1.png"),
+    linear-gradient(260deg, #60a5fa, #2563eb);
+}
+
+/* Resolved */
+.banner-resolved {
+  background-image:
+    url("./assets/image/vector1.png"), url("./assets/image/vector1.png"),
+    linear-gradient(260deg,#4ade80, #16a34a);
+}
