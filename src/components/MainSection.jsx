@@ -12,6 +12,9 @@ const MainSection = ({
 }) => {
   return (
     <div>
+      <h3 className="text-lg font-semibold text-gray-900 max-w-7xl mx-auto px-6">
+        Customer Tickets
+      </h3>
       <section className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left: 2-column grid across two-thirds */}
         <div className="lg:col-span-2">
