@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { toast, ToastContainer } from "react-toastify";
 import MainSection from "./components/MainSection";
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [tickets, setTickets] = useState([]); // Ticket[]
@@ -72,6 +73,7 @@ function App() {
           onSelectTicket={handleSelectTicket}
           onCompleteTicket={handleCompleteTicket}
         ></MainSection>
+        <Footer></Footer>
 
         <ToastContainer position="top-right"></ToastContainer>
       </div>
