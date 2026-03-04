@@ -13,7 +13,7 @@ function App() {
   const [resolvedIds, setResolvedIds] = useState(new Set());
 
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("/data.json")
       .then((r) => r.json())
       .then(setTickets);
   }, []);
