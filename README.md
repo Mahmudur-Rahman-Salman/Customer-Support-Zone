@@ -1,16 +1,49 @@
-# React + Vite
+1. JSX কী? আর কেন ব্যবহার করা হয়?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+   JSX মানে হলো JavaScript XML।
+   সহজ করে বললে, JSX দিয়ে আমরা JavaScript-এর ভেতরেই HTML-এর মতো কোড লিখতে পারি।
 
-Currently, two official plugins are available:
+   # কেন JSX ব্যবহার করা হয়?
+   # UI কোড পড়তে সহজ হয়
+   # HTML + JavaScript একসাথে লেখা যায়
+   # কোড কম এবং পরিষ্কার হয়
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. State আর Props এর পার্থক্য কী?
 
-## React Compiler
+   # Props কী?
+   # Parent component থেকে child component-এ ডাটা পাঠাতে ব্যবহার হয়
+   # Read-only (পরিবর্তন করা যায় না)
+   # Component-এর বাইরে থেকে আসে
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   State কী?
+   # Component-এর নিজের ডাটা
+   # Change করা যায়
+   # Component-এর ভেতরে থাকে
 
-## Expanding the ESLint configuration
+3. useState hook কী? আর এটা কীভাবে কাজ করে?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   useState হলো React-এর একটি hook।
+   এটা দিয়ে component-এর state বানানো হয়।
+
+   useState কী করে?
+   # একটি state variable বানায়
+   # সেই state update করার function দেয়
+
+4. React-এ Component-এর মধ্যে State কীভাবে শেয়ার করা হয়?
+
+   State উপরে তুলতে হয় (Lifting State Up)
+   নিয়ম:
+   Common parent component-এ state রাখো
+   Props দিয়ে child component-এ পাঠাও
+
+   # উদাহরণ:
+   Parent → state রাখবে
+   Child A & Child B → props দিয়ে সেই state পাবে
+
+5. React-এ Event Handling কীভাবে করা হয়?
+
+    React এ event handling JavaScript এর মতোই, কিন্তু একটু নিয়ম আছে।
+
+    # নিয়ম:
+    Event নাম camelCase হয়
+    Function পাঠাতে হয়, কল না

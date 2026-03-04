@@ -104,7 +104,7 @@ const Footer = () => {
 
           <div class="border-t border-gray-700 mt-10 pt-6">
             <p class="text-sm text-gray-500 text-center">
-              © 2026 YourCompany. All rights reserved.
+              © 2026 TicketSystem. All rights reserved.
             </p>
           </div>
         </div>
